@@ -12,6 +12,7 @@ Source0:	http://prdownloads.sourceforge.net/nusoap/nusoap-%{version}.zip
 Source1:	http://prdownloads.sourceforge.net/nusoap/nusoap-docs-%{version}.zip
 BuildArch:	noarch
 Requires:	php-pear
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 NuSOAP is a rewrite of SOAPx4, provided by NuSphere and Dietrich Ayala. It is a
