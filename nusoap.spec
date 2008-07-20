@@ -3,8 +3,8 @@
 
 Summary:	NuSOAP - SOAP Toolkit for PHP
 Name:		nusoap
-Version:	0.7.2
-Release:	%mkrel 4
+Version:	0.7.3
+Release:	%mkrel 1
 License:	LGPL
 Group:		Development/PHP
 URL:		http://sourceforge.net/projects/nusoap/
@@ -12,7 +12,7 @@ Source0:	http://prdownloads.sourceforge.net/nusoap/nusoap-%{version}.zip
 Source1:	http://prdownloads.sourceforge.net/nusoap/nusoap-docs-%{version}.zip
 BuildArch:	noarch
 Requires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 NuSOAP is a rewrite of SOAPx4, provided by NuSphere and Dietrich Ayala. It is a
@@ -38,13 +38,13 @@ find -type f -print0|xargs -0 file|grep 'text'|cut -d: -f1|xargs perl -p -i -e '
 perl -pi -e "s|\(\'\.\.\/lib\/|\(\'%{_datadir}/pear/nusoap/|g" samples/*
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{_datadir}/pear/nusoap
 install -m0644 lib/*.php %{buildroot}%{_datadir}/pear/nusoap/
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
