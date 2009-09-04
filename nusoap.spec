@@ -4,7 +4,7 @@
 Summary:	NuSOAP - SOAP Toolkit for PHP
 Name:		nusoap
 Version:	0.7.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	LGPL
 Group:		Development/PHP
 URL:		http://sourceforge.net/projects/nusoap/
