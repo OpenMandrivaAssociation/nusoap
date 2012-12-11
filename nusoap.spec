@@ -50,3 +50,46 @@ install -m0644 lib/*.php %{buildroot}%{_datadir}/pear/nusoap/
 %doc lib/changelog docs/* samples
 %dir %{_datadir}/pear/nusoap
 %{_datadir}/pear/nusoap/*php
+
+
+%changelog
+* Tue Feb 07 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.5-1mdv2012.0
++ Revision: 771620
+- new version 0.9.5
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.7.3-2mdv2010.0
++ Revision: 430190
+- rebuild
+
+* Sun Jul 20 2008 Oden Eriksson <oeriksson@mandriva.com> 0.7.3-1mdv2009.0
++ Revision: 239097
+- 0.7.3
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Wed Sep 19 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.7.2-4mdv2008.0
++ Revision: 90012
+- rebuild
+
+
+* Fri Jan 26 2007 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-3mdv2007.0
++ Revision: 113862
+- Import nusoap
+
+* Fri Jan 26 2007 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-3mdv2007.1
+- use the mkrel macro
+
+* Fri Dec 02 2005 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-2mdk
+- re-added into contrib (where did it go?)
+- move it to /usr/share/pear/nusoap to make it easier
+
+* Thu Oct 20 2005 Oden Eriksson <oeriksson@mandriva.com> 0.7.2-1mdk
+- initial Mandriva package
+
