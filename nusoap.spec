@@ -1,10 +1,10 @@
-%define _requires_exceptions pear(f:
-%define _provides_exceptions pear(f:
+%define __noautoreq 'pear(f:'
+%define __noautoprov 'pear(f:'
 
 Summary:	SOAP Toolkit for PHP
 Name:		nusoap
 Version:	0.9.5
-Release:	%mkrel 1
+Release:	2
 License:	LGPLv2.1+
 Group:		Development/PHP
 URL:		http://sourceforge.net/projects/nusoap/
