@@ -4,7 +4,7 @@
 Summary:	SOAP Toolkit for PHP
 Name:		nusoap
 Version:	0.9.5
-Release:	3
+Release:	4
 License:	LGPLv2.1+
 Group:		Development/PHP
 Url:		http://sourceforge.net/projects/nusoap/
