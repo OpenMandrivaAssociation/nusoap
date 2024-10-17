@@ -7,7 +7,7 @@ Version:	0.9.5
 Release:	4
 License:	LGPLv2.1+
 Group:		Development/PHP
-Url:		http://sourceforge.net/projects/nusoap/
+Url:		https://sourceforge.net/projects/nusoap/
 Source0:	https://downloads.sourceforge.net/project/nusoap/%{name}/%{version}/%{name}-%{version}.zip
 Source1:	https://downloads.sourceforge.net/project/nusoap/%{name}-docs/%{version}/%{name}-docs-%{version}.zip
 Requires:	php-pear
